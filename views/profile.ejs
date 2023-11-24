@@ -1,0 +1,20 @@
+<%- include("partials/header")%>
+<%- include("partials/nav")%>
+<div class="box2">
+    <h1>Welcome to Task Profile </h1>
+
+    <!-- <button style="width: 90px; margin: auto;"><a href="/add">Add task</a></button>  -->
+    <ul>
+    <% users.forEach((user) =>{ %>
+        <li><h2 style="color: #000000; margin-bottom: 20px;"><%= user.username %></h2>
+            <p>&nbspTitle- <%= user.title %></p>
+            <p>Description- <%= user.description %>
+        </li>
+        <a class="a1" href="/update/<%= user._id%>">✏️</a>
+        <a class="a2" href="/delete/<%= user._id%>">❌</a>
+        <a class="a3" href="/add">➕</a>
+       
+    <%})%>
+    </ul>
+</div>
+<%- include("partials/footer")%>

@@ -1,0 +1,9 @@
+<%- include("partials/header")%>
+ <%- include("partials/nav")%>
+ <form action="/add" method="post">
+    <h1>Add Task </h1>
+    <input type="text" placeholder="  Enter title" name="title">
+    <input type="text" placeholder="  Enter note" name="description">
+    <button>Add Task</button>
+</form>
+<%- include("partials/footer")%>

@@ -1,0 +1,11 @@
+<%- include("partials/header")%>
+<%- include("partials/nav")%>
+<form action="/update/<%= user._id %>" method="post">
+    <h1>Edit Task</h1>
+    <input type="text" value="<%= user.title %>" name="title">
+    <input type="text" value="<%= user.description %>" name="description">
+    <button>Update</button>
+     <p>Get back to sign in.<a href="/signin">Sign In</a></p>
+  </form>
+</div>
+<%- include("partials/footer")%>
