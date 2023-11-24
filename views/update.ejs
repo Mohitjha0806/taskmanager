@@ -1,11 +1,17 @@
 <%- include("partials/header")%>
 <%- include("partials/nav")%>
-<form action="/update/<%= user._id %>" method="post">
+<div class="box4">
+  <div class="box4-1">
+<form class="form-control" action="/update/<%= user._id %>" method="post">
     <h1>Edit Task</h1>
-    <input type="text" value="<%= user.title %>" name="title">
-    <input type="text" value="<%= user.description %>" name="description">
-    <button>Update</button>
-     <p>Get back to sign in.<a href="/signin">Sign In</a></p>
+    <input class="form-control" type="text" value="<%= user.title %>" name="title">
+    <br>
+    <input class="form-control" type="text" value="<%= user.description %>" name="description">
+    <br>
+    <button class="btn btn-success btn-lg" >Update</button>
+    <br>
+    <br>
+     <p>Get back to sign in. <button class="btn btn-primary btn-sm" ><a href="/signin">Sign In</a></button></p>
   </form>
-</div>
+</div></div>
 <%- include("partials/footer")%>

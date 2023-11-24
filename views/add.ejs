@@ -1,9 +1,14 @@
 <%- include("partials/header")%>
  <%- include("partials/nav")%>
- <form action="/add" method="post">
+ <div class="box5">
+    <div class="box5-1">
+ <form class="form-control" action="/add" method="post">
     <h1>Add Task </h1>
-    <input type="text" placeholder="  Enter title" name="title">
-    <input type="text" placeholder="  Enter note" name="description">
-    <button>Add Task</button>
+    <input class="form-control" type="text" placeholder="  Enter title" name="title">
+    <br>
+    <input class="form-control" type="text" placeholder="  Enter note" name="description">
+    <br>
+    <button class="btn btn-success btn-lg" >Add Task</button>
 </form>
+</div></div>
 <%- include("partials/footer")%>

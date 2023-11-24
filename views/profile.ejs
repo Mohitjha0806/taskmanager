@@ -1,18 +1,18 @@
 <%- include("partials/header")%>
 <%- include("partials/nav")%>
 <div class="box2">
-    <h1>Welcome to Task Profile </h1>
+    <h1>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspWelcome to Task Profile </h1>
 
     <!-- <button style="width: 90px; margin: auto;"><a href="/add">Add task</a></button>  -->
     <ul>
     <% users.forEach((user) =>{ %>
         <li><h2 style="color: #000000; margin-bottom: 20px;"><%= user.username %></h2>
-            <p>&nbspTitle- <%= user.title %></p>
+            <p>Title- <%= user.title %></p>
             <p>Description- <%= user.description %>
         </li>
-        <a class="a1" href="/update/<%= user._id%>">✏️</a>
-        <a class="a2" href="/delete/<%= user._id%>">❌</a>
-        <a class="a3" href="/add">➕</a>
+        <a class="a1" href="/update/<%= user._id%>"><button class="btn btn-primary btn-sm" >Edit Task</button></a>
+        <a class="a2" href="/delete/<%= user._id%>"><button class="btn btn-danger btn-sm" >Delete</button></a>
+        <a class="a3" href="/add"><button class="btn btn-warning btn-sm" >Add New Task</button></a>
        
     <%})%>
     </ul>
